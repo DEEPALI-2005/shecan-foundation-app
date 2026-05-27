@@ -42,6 +42,9 @@ async function seedAdminIfNeeded() {
 (async () => {
   await connectDB(process.env.MONGO_URI);
   await seedAdminIfNeeded();
+  app.get("/", (req, res) => {
+    res.send("SheCan backend is running");
+  });
 
   const port = process.env.PORT || 5000;
   app.listen(port, () => console.log("Server running on port", port));
