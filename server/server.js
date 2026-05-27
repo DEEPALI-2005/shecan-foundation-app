@@ -8,6 +8,13 @@ const Admin = require("./models/Admin");
 
 const authRoutes = require("./routes/auth");
 const messageRoutes = require("./routes/messages");
+app.get("/", (req, res) => {
+  res.send("SheCan backend is running");
+});
+
+app.get("/api/health", (req, res) => {
+  res.json({ ok: true });
+});
 
 const app = express();
 
