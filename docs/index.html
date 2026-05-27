@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>She Can Foundation | Contact</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="page">
+    <header class="header">
+      <h1>She Can Foundation</h1>
+      <p>Contact Form</p>
+      <a class="adminLink" href="admin.html">Admin Panel</a>
+    </header>
+
+    <section class="card">
+      <h2>Send a Message</h2>
+
+      <form id="contactForm" class="form">
+        <label>Name
+          <input id="name" required minlength="2" />
+        </label>
+
+        <label>Email
+          <input id="email" type="email" required />
+        </label>
+
+        <label>Message
+          <textarea id="message" rows="5" required minlength="5"></textarea>
+        </label>
+
+        <button type="submit">Submit</button>
+      </form>
+
+      <p id="status" class="status" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

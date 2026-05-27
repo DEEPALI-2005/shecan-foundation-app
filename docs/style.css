@@ -1,0 +1,26 @@
+* { box-sizing: border-box; }
+body { margin:0; font-family: system-ui, Arial; background:#fff3ef; color:#111827; }
+.page { max-width: 900px; margin: 0 auto; padding: 18px; }
+.header { display:flex; justify-content:space-between; align-items:baseline; gap:12px; flex-wrap:wrap; }
+.card { background:white; padding:16px; border-radius:14px; border:1px solid #e5e7eb; }
+.form { display:grid; gap:10px; }
+input, textarea { width:100%; padding:12px; border-radius:10px; border:1px solid #e5e7eb; }
+button { padding:12px; border:0; border-radius:10px; background:#ff4d2e; color:white; font-weight:700; cursor:pointer; }
+button:hover { background:#e13d22; }
+.adminLink { color:#ff4d2e; font-weight:700; text-decoration:none; }
+.status { margin-top:10px; font-weight:700; }
+.status.ok { color:#065f46; }
+.status.bad { color:#b91c1c; }
+
+.adminActions { display:flex; gap:10px; flex-wrap:wrap; margin: 10px 0; }
+.list { list-style:none; padding:0; display:grid; gap:10px; }
+.item { display:flex; justify-content:space-between; gap:12px; border:1px solid #e5e7eb; border-radius:12px; padding:12px; }
+.item p { margin: 8px 0 0; }
+.date { color:#6b7280; font-size: 0.85rem; margin-top:2px; }
+.danger { background:#dc2626; }
+.danger:hover { background:#b91c1c; }
+
+/* Responsive */
+@media (max-width: 640px) {
+  .item { flex-direction: column; }
+}

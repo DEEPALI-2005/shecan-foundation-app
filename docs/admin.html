@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin | She Can Foundation</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="page">
+    <header class="header">
+      <h1>Admin Panel</h1>
+      <a class="adminLink" href="index.html">Back to Form</a>
+    </header>
+
+    <section class="card">
+      <h2>Admin Login</h2>
+
+      <form id="loginForm" class="form">
+        <label>Email
+          <input id="adminEmail" type="email" required />
+        </label>
+        <label>Password
+          <input id="adminPassword" type="password" required />
+        </label>
+        <button type="submit">Login</button>
+      </form>
+
+      <p id="loginStatus" class="status" aria-live="polite"></p>
+
+      <hr />
+
+      <div class="adminActions">
+        <button id="loadBtn" type="button">Load Messages</button>
+        <button id="logoutBtn" type="button">Logout</button>
+      </div>
+
+      <ul id="messageList" class="list"></ul>
+    </section>
+  </main>
+
+  <script src="admin.js"></script>
+</body>
+</html>
